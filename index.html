@@ -74,10 +74,10 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-info fa-fw"></i> <span class="network-name">Liên hệ</span></a>
+                                <a href="#lh" class="btn btn-default btn-lg page-scroll"><i class="fa fa-info fa-fw"></i> <span class="network-name">Liên hệ</span></a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-book fa-fw"></i> <span class="network-name">Góp ý</span></a>
+                                <a href="mailto:lhphuc210291@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-book fa-fw"></i> <span class="network-name">Góp ý</span></a>
                             </li>
                         </ul>
                     </div>
@@ -95,7 +95,7 @@
         <br/>
         <div class="content-section-a">
             <div class="container">
-                <a href="#sdt" class="btn_tit btn_tit-default btn-lg"><i class="fa fa-tag"></i> <span class="network-name">Sữa dưỡng thể</span></a>
+                <a href="#sdt" class="btn_tit btn_tit-default btn-lg page-scroll"><i class="fa fa-tag"></i> <span class="network-name">Sữa dưỡng thể</span></a>
                 <div class="row">
                     <div class="col-lg-5 col-sm-6">
                         <hr class="section-heading-spacer">
@@ -152,7 +152,7 @@
         <div class="content-section-a">
 
             <div class="container">
-                <a href="#xtt" class="btn_tit btn_tit-default btn-lg"><i class="fa fa-tag"></i> <span class="network-name">Xịt toàn thân</span></a>
+                <a href="#xtt" class="btn_tit btn_tit-default btn-lg page-scroll"><i class="fa fa-tag"></i> <span class="network-name">Xịt toàn thân</span></a>
                 <div class="row">
                     <div class="col-lg-5 col-sm-6">
                         <hr class="section-heading-spacer">
@@ -178,20 +178,22 @@
     <!-- /.content-section-a -->
 
     <div class="banner">
-
+        <section id="lh">
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Hãy liên hệ với chúng tôi:</h2>
+                    <h2>Hãy liên hệ với PY:</h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
-                        <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-info fa-fw"></i> <span class="network-name">Liên hệ</span></a>
+                            <li>
+                                <a href="mailto:lhphuc210291@gmail.com">
+                                <input class="btn btn-default btn-lg" type="image" src="img/gmail.png" name="image" width="120" height="74" onclick="">
+                            </a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-book fa-fw"></i> <span class="network-name">Góp ý</span></a>
+                                <div class="btn btn-default" id='skype_status'></div>
                             </li>
                     </ul>
                 </div>
@@ -199,13 +201,15 @@
 
         </div>
         <!-- /.container -->
-
+    </section>
+    <br />
+    <img src="http://hitwebcounter.com/counter/counter.php?page=5809716&style=0010&nbdigits=7&type=page&initCount=0" title="" Alt=""   border="0" style="margin-right: 8cm;float: right;">
     </div>
 
     <!-- /.banner -->
 
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -230,7 +234,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
@@ -239,6 +243,46 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/grayscale.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+
+
+    <script src="js/skype_status.packed.js" type="text/javascript"></script>
+     
+    <script>
+    var sk = new skype_status("skype_status", {
+            /***************************************
+            * Your skype username
+            * Multiple usernames can be provided in array
+            * to create multi user chat, conference call, etc
+            * but only first user will be used to get online status
+            ****************************************/
+            skype_name: "phuc.lh1677",
+            /***************************************
+            * Possible types of images:
+            * balloon          - Balloon style 
+            * bigclassic       - Big Classic Style 
+            * smallclassic     - Small Classic Style 
+            * smallicon        - Small Icon (transparent background) 
+            * mediumicon       - Medium Icon 
+            * dropdown-white   - Dropdown White Background 
+            * dropdown-trans   - Dropdown Transparent Background
+            ****************************************/
+            image: "balloon",
+            /***************************************
+            * Possible types of actions:
+            * ""          - Empty, no action. 
+            * call        - Call to user
+            * chat        - Open chat window
+            * add         - Add to skype
+            * userinfo    - Open user profile 
+            * voicemail   - Leave voicemail (Only if you have voicemail subscription) 
+            * sendfile    - Send file to user 
+            ****************************************/
+            action: "call",
+            //how often to recheck skype status in miliseconds
+            update: 10000
+        }
+    );
+    </script>
 
 </body>
 
